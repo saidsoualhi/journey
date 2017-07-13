@@ -1,0 +1,32 @@
+// File Name: _base.scss
+// Description: global base styles
+// Used by: style.scss & home.scss
+// Dependencies:
+// ------------------------------------------------------------
+
+// ------- largeur initial de la page --------
+.container{
+		max-width: 58.88rem;
+}
+
+// ---------- social media icons -------------
+.social-media{
+    i{
+        color: white;
+        background-color: $gray-color;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        }
+        .fa-google-plus:hover{
+            background-color: #DC4A38;
+        }
+        .fa-twitter:hover{
+            background-color: #1DA1F2;
+        }
+        .fa-facebook:hover{
+            background-color: #3A5897;
+        }
+}

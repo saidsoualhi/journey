@@ -1,0 +1,32 @@
+header{
+	border-bottom: 2px solid $gray-color;
+	height: 10.5rem;
+	background-color: white;
+	@media (min-width: $mobileMin) and (max-width: 530px) {
+		    		height: 7rem;
+		    	}
+	@media (min-width: $mobileMin) and (max-width: $tabletMax) {
+		    		margin: 0rem 1rem;
+		    	}
+	a{
+		display: inline-block;
+		padding: 3.125rem 0rem;
+		@media (min-width: $mobileMin) and (max-width: 530px) {
+		    		display: block;
+		    		text-align: center;
+		    		margin: 0rem 1rem;
+		    		padding: 1rem 0rem;
+		    	}
+		h1{
+			font-size: 0;
+		}
+	}
+	ul{
+		padding-top: 4.313rem;
+		@include hide-for(530);
+		li{
+			margin-left: 1.188rem;
+			display: inline-block;
+		}
+	}
+}

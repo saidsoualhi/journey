@@ -1,0 +1,175 @@
+section{
+	@media (min-width: $mobileMin) and (max-width: $tabletMax) {
+		    		margin: 0rem 0.5rem;
+		    	}
+	.section-top-slider{
+		padding-top: 3.25rem;
+		h2{
+			font-family: $primaryFont, $OpenSans;
+			font-size: 1.8rem;
+			letter-spacing: 0.005rem;
+			text-align: center;
+			padding-bottom: 3.2rem;
+			}
+	}
+	.under-slider{
+			text-align: center;
+			padding: 1.95rem 0 3.95rem 0;
+			border-bottom: 2px solid $gray-color;
+			@media (min-width: $mobileMin) and (max-width: $tabletMax) {
+		    		padding: 0rem 0rem;
+		    	}
+			h3{
+				text-transform: uppercase;
+				font-family: arial;
+				font-size: 1.05rem;
+			    font-weight: 600;
+			    letter-spacing: 0.05rem;
+			    padding-top: 1.85rem;
+			}
+			p{
+				font-family: arial;
+			    line-height: 1.35rem;
+			    font-size: 0.94rem;
+    			letter-spacing: -0.008rem;
+			    &:before{
+			    	content:'';
+			    	display: block;
+			    	margin: 1.18rem auto;
+			    	background-color: $gray-color;
+			    	width: 1.35rem;
+			    	height: 0.125rem;
+			    }
+			}
+			.sprite {
+				background-image: url(../img/spritesheet.png);
+				background-repeat: no-repeat;
+				margin: 0 auto;
+				display: block;
+			}
+			.sprite-Rocket {
+		        width: 4.063rem;
+		        height: 4.063rem;
+		        background-position: -127px -5px;
+		    }
+			.sprite-Flag {
+		        width: 3.5rem;
+		        height: 4.063rem;
+		        background-position: -61px -5px;
+		    }
+			.sprite-Bulb {
+		        width: 2.875rem;
+		        height: 4rem;
+		        background-position: -5px -5px;
+		    }
+		    .bulb-icon{
+		    	box-sizing: border-box;
+		    	padding: 0rem 0.625rem;
+		    	@media (min-width: $mobileMin) and (max-width: $tabletMin) {
+		    		padding: 2rem 0rem;
+		    	}
+		    }
+		    .rocket-icon, .flag-icon{
+		    	@extend .bulb-icon;
+		    }
+	}
+	.section-img-1{
+		padding: 5.75rem 0rem 5.39rem 0rem;
+		border-bottom: 2px solid $gray-color;
+		align-items: center;
+		@media (min-width: $mobileMin) and (max-width: $tabletMin) {
+		    		text-align: center;
+		    		padding-top: 3.4rem;
+		    	}
+		.text-1{
+			padding-left: 3.813rem;
+			@media (min-width: $mobileMin) and (max-width: $tabletMin) {
+		    		padding: 1rem 2rem;
+		    	}
+			h2, p{
+				font-family: arial;
+			}
+			h2{
+				padding-bottom: 1.9rem;
+			}
+		}
+	}
+	.section-img-2{
+		padding: 5.4rem 0rem;
+		align-items: center;
+		@media (min-width: $mobileMin) and (max-width: $tabletMin) {
+		    		text-align: center;
+		    		padding-top: 3.4rem;
+		    	div{
+		    		margin: 0 auto;
+		    	}
+		    	}
+		.text-2{
+			padding-right: 3.813rem;
+			@media (min-width: $mobileMin) and (max-width: $tabletMin) {
+		    		padding: 1rem 2rem;
+		    	}
+			h2, p{
+				font-family: arial;
+			}
+			p{
+				padding: 2rem 0rem;
+			}
+			button{
+				@include roundedCorners(4);
+				width: 11.19rem;
+				height: 2.938rem;
+				font-size: 1.125rem;
+				margin: 0;
+				padding: 0;
+			}
+			span{
+				font-weight: 600;
+				padding: 0rem 1.6rem;
+			}
+			a{
+				font-weight: 600;
+				color: $red-color;
+			}
+		}
+	}
+	.sliderTwitter{
+		text-align: center;
+		margin: 0 auto;
+		ul{
+			background-color: #f8f8f8;
+			padding: 125px 0px;
+			margin: 0 auto;
+			li{
+				div{
+					
+				}
+				i{
+				display: inline-block;
+				width: 38px;
+				height: 30px;
+				background: url(../img/twitter-logo.png);
+				background-size: 38px 30px;
+				text-align: center;
+				}
+				h4{
+					padding: 2.2rem 0rem;
+					word-spacing: 0.05rem;
+					font-weight: 500;
+					display: block;
+					word-wrap: break-word;
+					a{
+						color: black;
+						text-decoration: underline;
+					}
+				}
+				p{
+					span{
+						color: $red-color;
+					}
+				}
+			}
+		}
+		
+	}
+}

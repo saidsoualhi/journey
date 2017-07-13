@@ -1,0 +1,13 @@
+%marginAuto {
+  @include margin-auto();
+}
+
+%hideText {
+  @include hide-text();
+}
+
+%borderBox {
+  @include box-sizing(border-box);
+}
+
+

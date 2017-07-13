@@ -1,0 +1,67 @@
+footer{
+    padding-top: 1.4rem;
+    h2{
+        font-family: $primaryFont, $OpenSans;
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding-bottom: 3.3rem;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            input[type="text"] {
+                display: inline-block;
+                background-color: #f8f8f8;
+                border: 2px solid #ececec;
+                width: 24.69rem;
+                padding: 0.5rem;
+                margin: 0rem;
+                font-size: 1.125rem;
+                height: 3.2rem;
+                @include roundedCorners(4);
+                @media (min-width: $mobileMin) and (max-width: $tabletMin) {
+                    width: 14rem;
+                }
+            }
+            .button.alert {
+                font-size: 1.125rem;
+                border: 2px solid $red-color;
+                padding: 10px 16px;
+                margin: 0rem 0rem 0rem 1rem;
+                @include roundedCorners(4);
+                background-color: $red-color;
+                height: 3.2rem;
+                @media (min-width: $mobileMin) and (max-width: $tabletMin) {
+                    margin: 0rem;
+                    width: 10rem;
+                }
+            }
+    }
+    .social-media{
+        text-align: center;
+        i{
+            margin: 0rem 0.5rem;
+        }
+    }
+    p {
+        display: inline-block;
+        font-size: 1.063rem;
+        text-align: center;
+        padding-top: 1.78rem;
+        line-height: 1.563rem;
+    }
+
+    p:after {
+        content: '';
+        display: block;
+        background-color: #e4e7e7;
+        width: 3.125rem;
+        height: 2px;
+        margin: 3.688rem auto 2.6rem auto;
+    }
+}
+.img-footer{
+    width: 100%;
+    padding-top: 1.555rem;
+}

@@ -1,0 +1,40 @@
+/**
+ *  Breakpoint
+ */
+
+@mixin bp($class) {
+
+  // For mobile
+  @if $class == sm {
+    @media (max-width: $mobileMax) { @content; }
+  }
+  // For mobile landscape
+  @else if $class == sm-landscape {
+    @media (max-width: $mobileMax) and (orientation: landscape){ @content; }
+  }
+  // For tablet
+  @else if $class == md {
+    @media (min-width: $tabletMin) and (max-width: $tabletMax) { @content; }
+  }
+  // For tablet portrait
+  @else if $class == md-portrait {
+    @media (min-width: $tabletMin) and (max-width: $tabletMax) and (orientation: portrait) { @content; }
+  }
+  // For tablet landscape
+  @else if $class == md-landscape {
+    @media (min-width: $tabletMin) and (max-width: $tabletMax) and (orientation: landscape) { @content; }
+  }
+  // For mobile and tablet
+  @else if $class == sm-md {
+    @media (max-width: $tabletMax) { @content; }
+  }
+  // For tablet and desktop
+  @else if $class == md-lg {
+    @media (min-width: $tabletMin) { @content; }
+  }
+  // For desktop
+  @else if $class == lg {
+    @media (min-width: $desktopMin) { @content; }
+  }
+
+}
